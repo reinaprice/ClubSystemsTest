@@ -1,0 +1,14 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h2>Client list:</h2>
+    @Html.Raw(DataDisplay.ClientNameList())
+    <h2>Membership list:</h2>
+    @Html.Raw(DataDisplay.MembershipList())
+    <h2>Negative balances:</h2>
+    @Html.Raw(DataDisplay.NegativeBalanceList())
+</div>
